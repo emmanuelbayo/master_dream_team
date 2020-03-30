@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="content-section">
+    <div class="outer">
+        <div class="middle">
+            <div class="inner">
+                <div style="text-align: center">
+                    <h1>Erreur 403</h1>
+                    <h3>Vous n'avez pas les autorisations pour accéder à cette page. </h3>
+                    <hr class="intro-divider">
+                    <a href="{{ url_for('home.homepage') }}" class="btn btn-default btn-lg">
+                        <i class="fa fa-home"></i>
+                        Accueil
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
