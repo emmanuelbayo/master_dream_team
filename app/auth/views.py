@@ -31,7 +31,7 @@ def register():
         return redirect(url_for('auth.login'))
 
    
-    return render_template('auth/register.html', form=form, title='Register')
+    return render_template('auth/register.html', form=form, title='Inscription')
 
 
 @auth.route('/login', methods=['GET', 'POST'])
@@ -53,7 +53,7 @@ def login():
         else:
             flash('Mot de passe or email invalide')
 
-    return render_template('auth/login.html', form=form, title='Login')
+    return render_template('auth/login.html', form=form, title='Connexion')
 
 
 @auth.route('/logout')
